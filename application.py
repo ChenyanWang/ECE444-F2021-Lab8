@@ -10,15 +10,6 @@ import pickle
 import flask
 from flask import Flask, Response, Request, json
 
-# import boto3
-# import fasttext as ft
-#import fastText as ft
-import urllib.request
-
-import sys
-import os
-import datetime
-
 #Cleaning libraries
 from bs4 import BeautifulSoup
 import re
