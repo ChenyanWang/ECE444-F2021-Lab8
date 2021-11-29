@@ -1,0 +1,3 @@
+[submodule "aws-elasticbeanstalk-ml-server"]
+	path = aws-elasticbeanstalk-ml-server
+	url = https://github.com/charlesmalafosse/aws-elasticbeanstalk-ml-server.git
