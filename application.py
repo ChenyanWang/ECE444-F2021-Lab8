@@ -329,7 +329,7 @@ def ping():
     status = 200 if health else 404
     return flask.Response(response='\n', status=status, mimetype='application/json')
 
-@application.route('/invocations', methods=['POST'])
+@application.route('/invocations', methods=['GET'])
 def transformation():
     """Do an inference on a single batch of data.
     """
