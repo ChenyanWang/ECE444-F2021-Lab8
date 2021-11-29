@@ -240,7 +240,7 @@ def load_dict_contractions():
 
 def tweet_cleaning_for_sentiment_analysis(tweet):    
     #Escaping HTML characters
-    tweet = BeautifulSoup(tweet).get_text()
+    tweet = BeautifulSoup(tweet, features="lxml").get_text()
     tweet = tweet.replace('\x92',"'")
     
     #REMOVAL of hastags/account
@@ -322,7 +322,7 @@ class ScoringService(object):
 ##############################################################################################
 
 # The flask app for serving predictions
-application = Flask(__name__)
+application = app = Flask(__name__)
 
 
 @application.route('/')
