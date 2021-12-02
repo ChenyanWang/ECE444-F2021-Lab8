@@ -4,7 +4,7 @@ This script will test the API for lab 8
 import time
 import requests
 
-api_url = "http://ece444servesentiment37-env.eba-iviaijmx.us-east-1.elasticbeanstalk.com/invocations"
+api_url = "http://ece444servesentiment-env.eba-hdw8wify.us-east-1.elasticbeanstalk.com/invocations"
 ITERATIONS = 100
 
 # List of tests and their expected sentiments
